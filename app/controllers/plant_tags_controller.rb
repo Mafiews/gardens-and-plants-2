@@ -11,7 +11,7 @@ class PlantTagsController < ApplicationController
       plant_tag = PlantTag.new(plant: @plant, tag: tag)
       plant_tag.save
     end
-      redirect_to garden_path(@plant.garden)
+    redirect_to garden_path(@plant.garden)
   end
   
 end
